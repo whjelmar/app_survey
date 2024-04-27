@@ -1,0 +1,22 @@
+{
+  "name": "app_survey",
+  "version": "1.0.0",
+  "description": "Ask questions about an application to determine the appropriate infrastructure that needs to be create to migrate the application to Azure or another Cloud Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whjelmar/app_survey.git"
+  },
+  "keywords": [
+    "JSON"
+  ],
+  "author": "[@whjelmar] (https://www.github.com/whjelmar)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whjelmar/app_survey/issues"
+  },
+  "homepage": "https://github.com/whjelmar/app_survey#readme"
+}
