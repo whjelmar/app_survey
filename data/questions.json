@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "question": "What is the current hardware configuration (CPU, memory, storage) of the servers hosting the application?"
+    },
+    {
+        "id": 2,
+        "question": "Please list the operating systems and versions currently in use."
+    },
+    {
+        "id": 3,
+        "question": "Are there any specific security requirements or compliance regulations that the application needs to adhere to in the cloud?"
+    },
+    {
+        "id": 4,
+        "question": "What are the peak load times, and what is the average number of users during these periods?"
+    },
+    {
+        "id": 5,
+        "question": "Does the application have any dependencies on other services or databases that also need to be migrated?"
+    },
+    {
+        "id": 6,
+        "question": "What are the current backup and disaster recovery strategies in place?"
+    },
+    {
+        "id": 7,
+        "question": "What is the acceptable downtime during migration, if any?"
+    },
+    {
+        "id": 8,
+        "question": "Are there specific cloud providers being considered, and what are the key factors for their selection?"
+    },
+    {
+        "id": 9,
+        "question": "What is the anticipated budget for the cloud migration project?"
+    },
+    {
+        "id": 10,
+        "question": "Are there existing staff with cloud technology skills, or is there a need for training or hiring?"
+    }
+]

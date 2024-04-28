@@ -2,8 +2,9 @@
   "name": "app_survey",
   "version": "1.0.0",
   "description": "Ask questions about an application to determine the appropriate infrastructure that needs to be create to migrate the application to Azure or another Cloud Platform",
-  "main": "index.js",
+  "main": "src/main/main.js",
   "scripts": {
+    "start": "electron .",
     "test": "jest"
   },
   "repository": {
@@ -20,6 +21,13 @@
   },
   "homepage": "https://github.com/whjelmar/app_survey#readme",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.24.1",
+    "electron": "^30.0.1",
+    "electron-packager": "^17.1.2",
+    "electron-rebuild": "^3.2.9",
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "simplemde": "^1.11.2"
   }
 }
