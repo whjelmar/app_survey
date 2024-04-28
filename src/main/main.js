@@ -26,6 +26,7 @@ function createWindow() {
     });
 }
 
+
 function getMenuTemplate() {
     return [
         {

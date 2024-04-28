@@ -11,6 +11,8 @@ async function loadAndDisplayQuestions() {
     }
 }
 
+let simpleMDEInstances = {};
+
 function displayQuestions(questions) {
     const container = document.getElementById('question-container');
     questions.forEach(question => {
@@ -26,6 +28,9 @@ function displayQuestions(questions) {
         questionBlock.appendChild(answerInput);
 
         container.appendChild(questionBlock);
+
+        // Initialize SimpleMDE on this textarea and store the instance
+        simpleMDEInstances[question.id] = new SimpleMDE({ element: answerInput });
     });
 }
 
@@ -62,12 +67,12 @@ function setupSaveListeners() {
 
 function collectAnswers() {
     const answers = [];
-    document.querySelectorAll('.question textarea').forEach((textarea, index) => {
+    Object.keys(simpleMDEInstances).forEach(questionId => {
+        const editor = simpleMDEInstances[questionId];
         answers.push({
-            questionId: index + 1,
-            answer: textarea.value
+            questionId: questionId,
+            answer: editor.value()  // This retrieves the Markdown content from the editor
         });
     });
     return answers;
 }
-
