@@ -21,12 +21,17 @@ function displayQuestions(questions) {
 
         const questionTitle = document.createElement('h3');
         questionTitle.textContent = question.question;
+        questionTitle.classList.add('block', 'mb-2', 'text-sm', 'font-medium' ,'text-gray-900', 'dark:text-white');
         questionBlock.appendChild(questionTitle);
-
+        
         const answerInput = document.createElement('textarea');
         answerInput.id = 'answer-' + question.id;
+        answerInput.classList.add('block', 'p-2.5', 'w-full', 'text-sm', 'text-gray-900', 'bg-gray-50', 
+            'rounded-lg', 'border', 'border-gray-300', 'focus:ring-blue-500', 
+            'focus:border-blue-500', 'dark:bg-gray-700', 'dark:border-gray-600',
+            'dark:placeholder-gray-400', 'dark:text-white', 'dark:focus:ring-blue-500' ,
+            'dark:focus:border-blue-500');
         questionBlock.appendChild(answerInput);
-
         container.appendChild(questionBlock);
 
         // Initialize SimpleMDE on this textarea and store the instance
