@@ -48,7 +48,8 @@ Install dependencies
 Start the server
 
 ```powershell
-  npm run start
+  npm run start or
+  electron .
 ```
 
 
